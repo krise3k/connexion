@@ -10,6 +10,8 @@ install:
   - pip install --upgrade setuptools tox tox-travis coveralls
 dist: 
   - xenial
+sudo:
+  - required
 script:
   - tox
 after_success:
